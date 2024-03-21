@@ -6,6 +6,7 @@ const Home = () => {
     return (
         <div>
             <NavBer></NavBer>
+            <h1>Welcome to New World</h1>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
