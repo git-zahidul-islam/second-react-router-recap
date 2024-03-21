@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import './NavBer.css'
 
 const NavBer = () => {
     return (
         <div>
-            <div className="text-center p-2 bg-slate-400">
-                <Link to={'/'}>Home</Link>
-                <Link to={'/posts'}>Posts</Link>
-                <Link to={'/about'}>About</Link>
-                <Link to={'/contact'}>Contact</Link>
-            </div>
+            <nav className="text-center p-2 bg-slate-400">
+                <NavLink to={'/'}>Home</NavLink>
+                <NavLink to={'/posts'}>Posts</NavLink>
+                <NavLink to={'/about'}>About</NavLink>
+                <NavLink to={'/contact'}>Contact</NavLink>
+            </nav>
         </div>
     );
 };
